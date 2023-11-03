@@ -10,9 +10,33 @@ import {
   resolvers as profileResolvers,
 } from './profile.js';
 
+import {
+  typeDef as Merchant,
+  resolvers as merchantResolvers,
+} from './merchant.js';
+
+import {
+  typeDef as Product,
+  resolvers as productResolvers,
+} from './product.js';
+
+import {
+  typeDef as Order,
+  resolvers as orderResolvers,
+} from './order.js';
+
 export const typeDefs = [
   User,
-  Profile
+  Profile,
+  Merchant,
+  Product,
+  Order,
 ];
 
-export const resolvers = _.merge({}, userResolvers, profileResolvers);
+export const resolvers = _.merge({}, 
+  userResolvers,
+  profileResolvers,
+  merchantResolvers,
+  productResolvers,
+  orderResolvers
+);

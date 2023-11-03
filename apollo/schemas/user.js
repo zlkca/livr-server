@@ -1,7 +1,7 @@
 // const typeDefs = `#graphql
 //   # Comments in GraphQL strings (such as this one) start with the hash (#) symbol.
 
-import { users } from "../../data/user.js";
+import { users } from "../../mocks/user.js";
 
 
 //   # This "Book" type defines the queryable fields for every book in our data source.
@@ -29,6 +29,8 @@ import { users } from "../../data/user.js";
 export const typeDef = `
     type User {
         _id: String
+        name: String
+        phone: String
         email: String
     }
 

@@ -1,4 +1,4 @@
-import { profiles } from "../../data/profile.js";
+import { profiles } from "../../mocks/profile.js";
 
 export const typeDef = `
     type Profile {
