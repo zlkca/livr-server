@@ -16,6 +16,16 @@ import {
 } from './merchant.js';
 
 import {
+  typeDef as Branch,
+  resolvers as branchResolvers,
+} from './branch.js';
+
+import {
+  typeDef as Category,
+  resolvers as categoryResolvers,
+} from './category.js';
+
+import {
   typeDef as Product,
   resolvers as productResolvers,
 } from './product.js';
@@ -25,10 +35,13 @@ import {
   resolvers as orderResolvers,
 } from './order.js';
 
+
 export const typeDefs = [
   User,
   Profile,
   Merchant,
+  Branch,
+  Category,
   Product,
   Order,
 ];
@@ -37,6 +50,8 @@ export const resolvers = _.merge({},
   userResolvers,
   profileResolvers,
   merchantResolvers,
+  branchResolvers,
+  categoryResolvers,
   productResolvers,
   orderResolvers
 );

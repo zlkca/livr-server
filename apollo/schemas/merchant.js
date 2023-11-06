@@ -6,6 +6,7 @@ export const typeDef = `
         name: String
         phone: String
         email: String
+        branches: [Branch]
     }
 
     type Query {
